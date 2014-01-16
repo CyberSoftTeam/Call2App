@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Call2App</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_help">Trợ giúp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="desc">Hình ảnh</string>
+    <string name="code">Mã số</string>
+    <string name="processing">Đang lấy thông tin ứng dụng&#8230;</string>
+    
+     <!-- Common text -->
+    <string name="btn_setCodeNumber">Gán mã</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Hủy</string>
+    <string name="btn_reset">Xóa</string>
+    <string name="btn_save">Lưu</string>
+    <string name="btn_setting">Setting</string>
+    <string name="howtouse">Cách dùng</string>
+    
+     <!-- Warning and Error -->
+    <string name="warning">Cảnh báo</string>
+    <string name="duplicated">Mã số này đã tồn tại, bạn có muốn hủy mã số cũ và dùng mã mới cho ứng dụng này? </string>
+    <string name="cannotGetApp">Không thể lấy thông tin thiết bị</string>
+    
+     <!-- Helper -->
+    <string name="txt_sample_img1">Chọn ứng dụng bạn thích, và gán mã số cho nó</string>
+    <string name="txt_sample_img2">Dùng chức năng gọi của điện thoại để gọi cho ứng dụng bằng mã số ở trên, giống như gọi điện bình thường (chỉ giống như một loại phím tắt trên máy của bạn, không mất phí gì cả)</string>
+    
+</resources>

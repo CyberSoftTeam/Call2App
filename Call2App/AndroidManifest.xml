@@ -7,8 +7,17 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
-    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
-    
+
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <!-- These permissions are only required for advertisements -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- These permissions are only required for showing the ad when pressing the Home button: -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
     <application
         android:name="cyber.app.call2app.Preferences"
         android:allowBackup="true"
@@ -18,21 +27,36 @@
         <activity
             android:name="cyber.app.call2app.controllers.MainActivity"
             android:label="@string/app_name"
-            android:windowSoftInputMode="adjustPan">
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <receiver android:name="cyber.app.call2app.receivers.OngoingCallBroadcastReceiver" 
-            android:exported="true"	android:enabled="true">
+        <activity
+            android:name="com.startapp.android.eula.EULAActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.startapp.android.publish.list3d.List3DActivity"
+            android:taskAffinity="cyber.app.call2app.AppWall"
+            android:theme="@android:style/Theme" />
+        <activity
+            android:name="com.startapp.android.publish.AppWallActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:taskAffinity="cyber.app.call2app.AppWall"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <receiver
+            android:name="cyber.app.call2app.receivers.OngoingCallBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" >
             <intent-filter>
-                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
             </intent-filter>
         </receiver>
-        
     </application>
 
 </manifest>

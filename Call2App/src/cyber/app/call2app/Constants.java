@@ -26,4 +26,7 @@ public class Constants {
 	public static final String UTF8 = "UTF-8";
 	
 	public static final String CURRENT_APP = "cyber.app.call2app";
+	public static final String STARTAPP_DEV_ID = "108427450";
+	public static final String STARTAPP_APP_ID = "201686877";
+	
 }
