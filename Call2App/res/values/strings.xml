@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Call2App</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="desc">Image</string>
+    <string name="code">Code</string>
+    <string name="processing">Loading Apps&#8230;</string>
+    
+     <!-- Common text -->
+    <string name="btn_setCodeNumber">Set Code</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_reset">Clear</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_setting">Setting</string>
+    <string name="howtouse">How to use</string>
+    
+     <!-- Warning and Error -->
+    <string name="warning">Warning</string>
+    <string name="duplicated">Your Code is existing, remove old Code and use the new one?</string>
+    <string name="cannotGetApp">Cannot get Application in device</string>
+    
+     <!-- Helper -->
+    <string name="txt_sample_img1">Choose application you want to make a number-shortcut</string>
+    <string name="txt_sample_img2">Use Call function of your phone, and run application with that number-shortcut above, like call to a phonenumber</string>
+    
+</resources>
